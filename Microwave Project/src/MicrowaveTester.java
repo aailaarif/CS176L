@@ -13,6 +13,7 @@ public class MicrowaveTester {
 		myMicrowave.start();
 		//reset time and power attributes to default with reset method call
 		myMicrowave.reset();
+
 	}
 
 }

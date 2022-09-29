@@ -17,11 +17,8 @@ public class Microwave {
 	}
 	//switch between power levels 1 and 2 unless power is equal to 0 and output
 	public void power () {
-		if(power==0) {
-			power++;
-			System.out.println("Power button was pressed. Power level is " + power);
-		}
-		else if (power==1) {
+		
+		if(power==1) {
 			power++;
 			System.out.println("Power button was pressed. Power level is " + power);
 		}
@@ -29,6 +26,7 @@ public class Microwave {
 			power=1;
 			System.out.println("Power button was pressed. Power level is " + power);
 		}
+
 	}
 	//reset power and time attributes to default and output
 	public void reset () {
