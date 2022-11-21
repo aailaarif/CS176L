@@ -6,8 +6,8 @@ public class MeasurableTester
    public static void main(String[] args)
    {
 	   double min=Integer.MAX_VALUE;
+	   
 	  //Countries
-	  double minCountry=Integer.MAX_VALUE;
 	  System.out.println("Countries Data");
 	  Measurable[] countries = new Measurable[3];
       countries[0] = new Country("Uruguay", 176220);
@@ -26,9 +26,9 @@ public class MeasurableTester
       System.out.println("Expected: 513120");
       System.out.println("");
       
-      minCountry=Data.min(countries);
+      min=Data.min(countries);
       
-      System.out.println("Minimum area: " + minCountry);
+      System.out.println("Minimum area: " + min);
       System.out.println("Expected: 30510");
       System.out.println("");
      
@@ -72,7 +72,7 @@ public class MeasurableTester
       
       System.out.println("Average score: " + avg);
       System.out.println("Expected: 78");
-      System.out.println("");
+      System.out.println();
       
       maxData = Data.max(quiz);
       
@@ -83,10 +83,6 @@ public class MeasurableTester
       min=Data.min(quiz);
       
       System.out.println("Minimum score: " + min);
-      System.out.println("Expected: 50");
-      
-      
-      
-
+      System.out.println("Expected: 50");   
    }
 }
